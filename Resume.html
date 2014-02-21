@@ -33,13 +33,20 @@
 		h1 { font-family: 'Roboto Slab', serif; margin-bottom: 16px; border-bottom: 1px solid #999; }
 		h2 { font-family: 'Roboto Slab', serif; font-weight: 300; margin-top: 16px; }
 		h3 { margin-top: 16px; font-size: 95%; color: #949e9a; text-transform: uppercase; }
-		h4 { font-style: italic; font-weight: 300; font-size: 95%; color: #949e9a; }
+		h4 { font-style: italic; font-weight: 400; font-size: 95%; color: #949e9a; }
 
 		ul { list-style-type: circle; padding-left: 20px; }
 
-		#content { width: 800px; margin: 40px auto 60px; }
-		#pic { float: right; margin: -30px 0 0 0; }
-		#summary { width: 500px; float: left; margin-top: 12px; }
+		#content { max-width: 800px; margin: 40px auto 60px; }
+		#pic {
+			float: right; 
+			margin: 30px 10px 0 0; 
+			width: 260px; 
+			background: #fff;
+			border: 10px solid #fff;
+			box-shadow: 0px 5px 12px 0px #bbb
+		}
+		#summary { max-width: 500px; float: left; margin-top: 12px; }
 		#summary p { font-style: italic; }
 		i.fa { padding-right: 6px; }
 		i.fa-mobile { padding-right: 15px; }
@@ -49,7 +56,7 @@
 <body>
 	<div id="content">
 		<header>
-			<img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+			<img src="images/profile-pic.jpg" alt="Photo of Cthulu" id="pic" />
 			<h1>Kris McGinnes</h1>
 			<div id="info">
 				<p>
