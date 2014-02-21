@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8" />
 
-	<link rel="stylesheet" href="Resume.css" type="text/css" charset="utf-8" />
+	<!-- <link rel="stylesheet" href="Resume.css" type="text/css" charset="utf-8" /> -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
 	<!-- I might want to have a response.css as well -->
 
@@ -19,36 +19,56 @@
 	<![endif]-->
 
 	<title>Kris McGinnes</title>
+
+	<style type="text/css">
+		* { margin: 0; padding: 0; }
+		html { height: 101%; }
+		.clear { clear: both; }
+
+		body { font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding-bottom: 65px; background: url(images/noise.jpg); }
+
+		a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+		a:hover { border-bottom-style: solid; color: black; }
+
+		h1 { font-family: 'Roboto Slab', serif; margin-bottom: 16px; border-bottom: 1px solid #999; }
+		h2 { font-family: 'Roboto Slab', serif; font-weight: 300; margin-top: 16px; }
+		h3 { margin-top: 16px; font-size: 95%; color: #949e9a; text-transform: uppercase; }
+		h4 { font-style: italic; font-weight: 300; font-size: 95%; color: #949e9a; }
+
+		ul { list-style-type: circle; padding-left: 20px; }
+
+		#content { width: 800px; margin: 40px auto 60px; }
+		#pic { float: right; margin: -30px 0 0 0; }
+		#summary { width: 500px; float: left; margin-top: 12px; }
+		#summary p { font-style: italic; }
+	</style>
 </head>
 
 <body>
-	<div class="content">
+	<div id="content">
 		<header>
 			<img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
-			<div class="info">
-				<h1>Kris McGinnes</h1>
-				<p>2600 Preston Rd.</p>
-				<p>Apt. 610</p>
-				<p>Plano, TX 75093</p>
-				<p>(972) 835-0981</p>
-				<p>kmcginnes@me.com</p>
-				<p>twitter.com/kmcginnes</p>
-				<p>github.com/kmcginnes</p>
+			<h1>Kris McGinnes</h1>
+			<div id="info">
+				<p>
+					Cell: <span class="tel">(972) 835 0981</span><br />
+					Email: <a class="email" href="mailto:kmcginnes@me.com">kmcginnes@me.com</a><br />
+					Twitter: <a href="http://twitter.com/kmcginnes">twitter.com/kmcginnes</a><br />
+					GitHub: <a href="http://github.com/kmcginnes">github.com/kmcginnes</a>
+				</p>
+			</div>
+
+			<div id="summary">
+				<p>
+					Software development excites me. I actively seek out ways to increase my knowledge
+					through picking the brains of those around me, reading development books, listening to
+					podcasts, going to user groups &amp; conferences, and field testing unfamiliar tools,
+					technologies, and languages in personal projects.
+				</p>
 			</div>
 		</header>
 
-		<div class="clear" />
-
-		<h2>Summary</h2>
-
-		<p>Software development excites me. I actively seek out ways to increase my knowledge
-		through picking the brains of those around me, reading development books, listening to
-		podcasts, going to user groups &amp; conferences, and field testing unfamiliar tools,
-		technologies, and languages in personal projects.</p>
-
-		<p>My goal is to be the worst. Not in my field, but in my environment. I want to
-		surround myself with those who are smarter than I so that I may soak in their
-		knowledge.</p>
+		<div class="clear"></div>
 
 		<h2>Skills &amp; Experience</h2>
 
@@ -210,12 +230,6 @@
 			<li>Data Structures and Algorithms, Computer Graphics (OpenGL)</li>
 			<li>Technical Writing, Operating System Concepts</li>
 		</ul>
-
-		<p>Robert Half: Mike Kyle</p>
-
-		<p>Sogetti: Jason Fortier or Chris Harper</p>
-
-		<p>Matrix</p>
 	</div>
 </body>
 </html>
