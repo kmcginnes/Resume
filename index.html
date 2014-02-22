@@ -9,8 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8" />
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!-- I might want to have a response.css as well -->
 
 	<!--[if lt IE 9]>
@@ -25,7 +25,7 @@
 		html { height: 101%; }
 		.clear { clear: both; }
 
-		body { font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding-bottom: 65px; background: url(images/noise.jpg); }
+		body { font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding-bottom: 65px; /*background: url(images/noise.jpg);*/ }
 
 		a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
 		a:hover { border-bottom-style: solid; color: black; }
@@ -35,6 +35,8 @@
 		h3 { margin-top: 16px; font-size: 95%; color: #949e9a; text-transform: uppercase; }
 		h4 { font-style: italic; font-weight: 400; font-size: 95%; color: #949e9a; }
 
+		header { line-height: 1.5em; }
+
 		ul { list-style-type: circle; padding-left: 20px; }
 
 		#content { max-width: 800px; margin: 40px auto 60px; }
@@ -43,8 +45,8 @@
 			margin: 30px 10px 0 0; 
 			width: 260px; 
 			background: #fff;
-			border: 10px solid #fff;
-			box-shadow: 0px 5px 12px 0px #bbb
+			border: 8px solid #fff;
+			box-shadow: 0px 5px 12px 0px #999
 		}
 		#summary { max-width: 500px; float: left; margin-top: 12px; }
 		#summary p { font-style: italic; }
@@ -55,12 +57,12 @@
 
 <body>
 	<div id="content">
+		<img src="./images/profile-pic.jpg" alt="Photo of Kris McGinnes" id="pic" />
+		<h1>Kris McGinnes</h1>
 		<header>
-			<img src="images/profile-pic.jpg" alt="Photo of Cthulu" id="pic" />
-			<h1>Kris McGinnes</h1>
 			<div id="info">
 				<p>
-					<i class="fa fa-mobile"></i> <span class="tel">(972) 835 0981</span><br />
+					<i class="fa fa-phone-square"></i> <span class="tel">(972) 835 0981</span><br />
 					<i class="fa fa-envelope-o"></i> <a class="email" href="mailto:kmcginnes@me.com">kmcginnes@me.com</a><br />
 					<i class="fa fa-linkedin"></i> <a href="http://linkedin.com/krismcginnes">linkedin.com/krismcginnes</a><br />
 					<i class="fa fa-twitter"></i> <a href="http://twitter.com/kmcginnes">twitter.com/kmcginnes</a><br />
@@ -95,8 +97,8 @@
 
 		<h3>Frameworks</h3>
 
-		<p>ASP.Net MVC 3/4/5, Node.js, WPF, WCF, WinForms, jQuery 1.8/2.0, Knockout, TopShelf
-		2/3, ServiceStack 3, NUnit 2.6, Reactive UI, Caliburn Micro, MVVM Light, MassTransit,
+		<p>ASP.Net MVC 3 &amp; Up, Node.js, WPF, WCF, WinForms, jQuery 1.5 &amp; Up, Knockout, TopShelf
+		2/3, ServiceStack 3, NUnit 2.5 &amp; Up, Reactive UI 4 &amp; Up, Caliburn Micro, MVVM Light, MassTransit,
 		Fixie</p>
 
 		<h3>Libraries</h3>
@@ -106,112 +108,89 @@
 
 		<h3>Tools</h3>
 
-		<p>Visual Studio, ReSharper, NCrunch, T4 Templates, Git, GitHub, GitTfs, GitTf,
-		TeamCity, Jenkins, Nuget, Windows, SQL Server, TFS 2010/2012, Sublime Text, LinqPad,
-		VMWare Fusion</p>
+		<p>Visual Studio 2003 &amp; Up, ReSharper, NCrunch, T4 Templates, Git, GitHub, GitTfs, GitTf,
+		TeamCity, Jenkins, Nuget, Windows, SQL Server 2005 &amp; Up, Team Foundation Server 2010 &amp; Up, 
+		Sublime Text, LinqPad, VMWare Fusion</p>
 
 		<h2><i class="fa fa-briefcase"></i> Employment</h2>
 
 		<h3>Improving Enterprises @ Thomson Reuters - 5/2013 to 2/2014</h3>
-
+		<h4>Sr. Consultant</h4>
 		<ul>
 			<li>Wrote a PowerShell script using BoxStarter for setting up a new developer&#8217;s
 			machine as soon as I was handed a 30 page script with hand written notes for the
 			parts that changed</li>
-
 			<li>Wrote the integration code for Letters and Filing Instructions with OneSource
 			Income Tax which required collaboration between many teams and team members</li>
-
 			<li>Helped simplify their Jenkins setup by introducing the copy artifacts plugin</li>
-
 			<li>Improved the succinctness of the unit tests by introducing an automocker which
 			creates your system under test automatically, and integrating other testing helpers,
 			such as: AutoFixture to enhance fixture setup, System.IO.Abstractions to remove
 			dependency on the file system, automatic mocking of ASP.Net MVC HttpContext members,
 			etc.</li>
-
 			<li>Helped complete a large epic started by another developer who was let go. This
 			required many iterations where we were able to improve the fragile code base little
 			by little while adding features</li>
-
 			<li>Helped guide some of the full time employees towards automated testing and
 			refactoring.</li>
 		</ul>
 
 		<h3>Excolo Group @ SpaceX - 2/2013 to 5/2013</h3>
-
+		<h4>Sr. Consultant</h4>
 		<ul>
 			<li>Worked with existing development team and product owner to design the
 			architecture of a rewrite of the entire issues system</li>
-
 			<li>Enhanced the users workflow in their issue system by adding additional
 			automation</li>
-
 			<li>Enhanced the audit trail to include more detailed and useful information</li>
 		</ul>
 
 		<h3>CH Reynolds @ Cisco Systems - 8/2010 to 2/2013</h3>
-
+		<h4>Team Lead</h4>
 		<h4>DCM - Demand and Capacity Management</h4>
-
 		<p>Ordering and lifecycle management for data center equipment integrating with the
 		resource manager listed below as well as other systems within Cisco</p>
-
 		<ul>
 			<li>Interviewed and hired a team of talented developers</li>
-
 			<li>Started from scratch using Asp.net MVC 3, Entity Framework, Ninject, Twitter
 			Bootstrap, JQuery DataTables</li>
-
 			<li>Used Onion Architecture to structure code</li>
-
 			<li>Transitioned from Entity Framework to NHibernate for performance and
 			extensibility</li>
-
 			<li>Added bundling and minification support through Cassette</li>
-
 			<li>Implemented Windows services using TopShelf to handle background tasks and
 			integration points with other internal systems</li>
-
 			<li>Testing was handled by NUnit, NSubstitute, FluentAssertions</li>
-
 			<li>Introduced automated build system using TeamCity and Psake</li>
 		</ul>
 
 		<h4>DCRM - Data Center Resource Management</h4>
-
+		<h4>Sr. Developer</h4>
 		<p>Helps manage data center resources visually and calculate virtual power usage. Also
 		provided realtime monitoring of power, temperature, and other metrics</p>
-
 		<ul>
 			<li>Utilized Silverlight 4 with MVVM and Telerik RadControls</li>
-
 			<li>Used Entity Framework 4 for data access</li>
-
 			<li>Additional: WCF, MS SQL Server 2008 R2, Reporting &amp; Analysis Services, TFS,
 			Agile Methodologies</li>
 		</ul>
 
 		<h3>Allegro Development - 10/2007 to 8/2010</h3>
-
+		<h4>Jr. Developer</h4>
 		<ul>
 			<li>Develop and design multiple components of an enterprise level energy trading and
 			risk management application</li>
-
 			<li>Focus includes natural gas and crude commodities forecasting, nomination and
 			actualization</li>
-
 			<li>Rewrote and refactored a very large and unmaintainable legacy code base using
 			design patterns and new technologies such as LINQ</li>
-
 			<li>Legacy code base written originally in Dot Net 1.1, SOA Web Services, ADO.Net
 			Data Sets, and Infragistics controls for WinForms</li>
-
 			<li>Helped push .Net 3.5, industry best practices, and design patterns</li>
 		</ul>
 
 		<h3>FedEx Kinkos - 7/2007 to 10/2007</h3>
-
+		<h4>Jr. Developer</h4>
 		<ul>
 			<li>Consulting developer on a data integration and mapping team using IBM
 			WebSphere</li>
